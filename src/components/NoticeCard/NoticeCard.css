@@ -1,0 +1,39 @@
+.card {
+    border-radius: 10px;
+    background-color: #FF6060;
+    margin: 10px 0;
+    height: 255px;
+    width: 255px;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+}
+
+.imgCard {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.textCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    width: 95%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    height: 45px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+@media (min-width: 768px) {
+      .card {
+        width: 100%
+    }
+}
