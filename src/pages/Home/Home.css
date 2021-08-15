@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    .bg {
+      border-radius: 25px;
+      background-color:#F7F7F7;
+      padding: 20px;
+    }
+  
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+  }
