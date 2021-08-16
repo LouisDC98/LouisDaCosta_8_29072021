@@ -2,16 +2,9 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  padding: 20px;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding: 40px 100px 0 100px;
-  }
 }
 
 code {
