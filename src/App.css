@@ -6,3 +6,13 @@
   max-width: 1500px;
   margin: auto;
 }
+
+.bodyShape {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .bodyShape {
+    padding: 40px 100px 0 100px;
+  }
+}

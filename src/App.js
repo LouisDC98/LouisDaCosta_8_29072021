@@ -3,15 +3,19 @@ import Header from './components/Header/Header';
 import Router from './pages/Router';
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
         <BrowserRouter>
             <div>
-                <Header />
-                <div className="body">
-                    <Router />
+                <div className="bodyShape">
+                    <Header />
+                    <div className="body">
+                        <Router />
+                    </div>
                 </div>
+                <Footer />
             </div>
         </BrowserRouter>
     );
