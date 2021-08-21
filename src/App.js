@@ -8,15 +8,13 @@ import Footer from './components/Footer/Footer';
 function App() {
     return (
         <BrowserRouter>
-            <div>
-                <div className="bodyShape">
-                    <Header />
-                    <div className="body">
-                        <Router />
-                    </div>
+            <div className="bodyShape">
+                <Header />
+                <div className="body">
+                    <Router />
                 </div>
-                <Footer />
             </div>
+            <Footer />
         </BrowserRouter>
     );
 }

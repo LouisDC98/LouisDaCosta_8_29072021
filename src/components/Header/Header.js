@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import logo from '../../img/logo.svg';
+import logo from 'img/logo.svg';
 
 class Header extends React.Component {
     render() {

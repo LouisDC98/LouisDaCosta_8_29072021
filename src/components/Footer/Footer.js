@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import logoWhite from '../../img/logoWhite.svg';
+import logoWhite from 'img/logoWhite.svg';
 
 class Footer extends React.Component {
     render() {
