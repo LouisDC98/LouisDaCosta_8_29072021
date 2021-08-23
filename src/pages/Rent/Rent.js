@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router';
 import { getNoticeById } from '../../datas/fakeAPI';
 
-class Rent extends Component {
+class Rent extends React.Component {
     constructor(props) {
         super(props);
         this.state = { rent: null, loading: true };

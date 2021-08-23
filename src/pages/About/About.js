@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Accordion from 'components/Accordion/Accordion';
 import Slogan from 'components/Slogan/Slogan';
 import backgroundAbout from 'img/backgroundAbout.png';
 
-class About extends Component {
+class About extends React.Component {
     render() {
         return (
             <>
