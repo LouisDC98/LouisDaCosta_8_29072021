@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './NoticeCard.css';
 import { withRouter } from 'react-router';
 
-class NoticeCard extends Component {
+class NoticeCard extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
