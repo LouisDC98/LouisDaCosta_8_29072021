@@ -9,7 +9,6 @@ class Rent extends Component {
     }
 
     componentDidMount() {
-        this.setState({ loading: true });
         const data = getNoticeById(this.props.match.params.id);
 
         this.setState({ rent: data, loading: false });
