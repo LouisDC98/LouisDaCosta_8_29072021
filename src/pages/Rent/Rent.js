@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+// import Carousel from 'components/Carousel/Carousel';
 import Accordion from 'components/Accordion/Accordion';
 import { getNoticeById } from 'datas/fakeAPI';
 import './Rent.css';
@@ -23,6 +24,7 @@ class Rent extends React.Component {
         }
         return (
             <React.Fragment>
+                {/* <Carousel pictures={this.state.rent.pictures} /> */}
                 <Presentation rent={this.state.rent} />
                 <article className="accordionRent">
                     <section className="accordionElement">
