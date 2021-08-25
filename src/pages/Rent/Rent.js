@@ -1,6 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-import { getNoticeById } from '../../datas/fakeAPI';
+import Accordion from 'components/Accordion/Accordion';
+import { getNoticeById } from 'datas/fakeAPI';
+import './Rent.css';
+import Presentation from 'components/Presentation/Presentation';
 
 class Rent extends React.Component {
     constructor(props) {
@@ -18,7 +21,22 @@ class Rent extends React.Component {
         if (this.state.loading) {
             return <div>Loading</div>;
         }
-        return <div>Rent n° {this.state.rent.id}</div>;
+        return (
+            <React.Fragment>
+                <Presentation rent={this.state.rent} />
+                <article className="accordionRent">
+                    <section className="accordionElement">
+                        <Accordion title={'Description'} content={this.state.rent.description} />
+                    </section>
+                    <section className="accordionElement">
+                        <Accordion
+                            title={'Equipements'}
+                            content={this.state.rent.equipments.join('\n')}
+                        />
+                    </section>
+                </article>
+            </React.Fragment>
+        );
     }
 }
 

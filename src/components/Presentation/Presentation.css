@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+    .displayPresentation {
+        display: flex;
+        justify-content: space-between;
+    }
+    .profileDisplay {
+       width: 25%;
+       flex-wrap: wrap-reverse;
+       justify-content: flex-end;
+    }
+}
+
+.titlePresentation {
+    text-align: start;
+    color: #FF6060;
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.locationPresentation {
+    text-align: start;
+    color: #FF6060;
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+}
+
+.displayPresentation {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.profileDisplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informationsDisplay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profileNamePresentation {
+    color: #FF6060;
+    width: 50%;
+    text-align: right;
+    margin: 0 5px 0 0;
+}
+
+.profilePicturePresentation {
+    border-radius: 50%;
+    width: 64px;
+}
+
+.starPresentation {
+    display: flex;
+    justify-content: flex-start;
+}

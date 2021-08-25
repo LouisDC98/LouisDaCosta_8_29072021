@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .accordionRent {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .accordionElement {
+        display: block;
+        width: 100%;
+    }
+}
+
+.accordionElement {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.accordionRent {
+    width: 100%;
+}
