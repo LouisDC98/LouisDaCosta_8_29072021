@@ -5,6 +5,8 @@ import Accordion from 'components/Accordion/Accordion';
 import { getNoticeById } from 'datas/fakeAPI';
 import './Rent.css';
 import Presentation from 'components/Presentation/Presentation';
+import { Redirect } from 'react-router';
+import Loader from 'components/Loader/Loader';
 
 class Rent extends React.Component {
     constructor(props) {
@@ -13,16 +15,25 @@ class Rent extends React.Component {
     }
 
     componentDidMount() {
-        const data = getNoticeById(this.props.match.params.id);
-
-        this.setState({ rent: data, loading: false });
+        getNoticeById(this.props.match.params.id)
+            .then((data) => {
+                this.setState({ rent: data });
+            })
+            .catch((error) => {
+                console.log(error);
+                this.setState({ error: true });
+            })
+            .finally(() => {
+                this.setState({ loading: false });
+            });
     }
 
     render() {
-        if (this.state.loading) {
-            return <div>Loading</div>;
-        }
-        return (
+        return this.state.loading ? (
+            <Loader />
+        ) : this.state.error ? (
+            <Redirect to="/" />
+        ) : (
             <React.Fragment>
                 <Carousel pictures={this.state.rent.pictures} />
                 <Presentation rent={this.state.rent} />
