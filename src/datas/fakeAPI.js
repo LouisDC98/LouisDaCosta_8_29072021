@@ -1,9 +1,21 @@
 import notices from './notices';
 
-export function getAllNotices() {
-    return notices;
+export async function getAllNotices() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(notices);
+        }, 1000);
+    });
 }
 
-export function getNoticeById(id) {
-    return notices.find((element) => element.id === id);
+export async function getNoticeById(id) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const toto = notices.find((element) => element.id === id);
+            if (toto === undefined) {
+                reject('Not found');
+            }
+            resolve(toto);
+        }, 1000);
+    });
 }
