@@ -11,11 +11,11 @@ export async function getAllNotices() {
 export async function getNoticeById(id) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const toto = notices.find((element) => element.id === id);
-            if (toto === undefined) {
+            const result = notices.find((element) => element.id === id);
+            if (result === undefined) {
                 reject('Not found');
             }
-            resolve(toto);
+            resolve(result);
         }, 1000);
     });
 }

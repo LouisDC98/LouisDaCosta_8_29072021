@@ -32,7 +32,7 @@ class Rent extends React.Component {
         return this.state.loading ? (
             <Loader />
         ) : this.state.error ? (
-            <Redirect to="/" />
+            <Redirect to="/error" />
         ) : (
             <React.Fragment>
                 <Carousel pictures={this.state.rent.pictures} />
