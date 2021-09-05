@@ -16,7 +16,7 @@ class Accordion extends React.Component {
         }));
     }
     render() {
-        const arrowPath = this.state.open ? arrowDown : arrowUp;
+        const arrowPath = this.state.open ? arrowUp : arrowDown;
 
         return (
             <div className="accordionBody">
